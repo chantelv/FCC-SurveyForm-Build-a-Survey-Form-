@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf=8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+      <h1 id="title">Suvery Form</h1>
+      <p id="description" class="description">Welcome user, please fill out your information.</p>
+      <form id="survey-form">
+        <fieldset>
+          <label for="name">Enter your name: <input id="name" name="name" type="text" placeholder="Please input your full name" required /></label>
+          <label for"name-label" id="name-label">(Please enter first AND last name)
+          <label for="email">Enter your email:<input id="email" email="email" type="email" placeholder="Please enter actual email" required /></label>
+          <label for"email-label" id="email-label">(No fake emails please)
+          <label for="number">Enter your number:<input id="number" number="number" type="number" min="0" max="100" id="number-label" placeholder="Please enter number recieved" />
+          <label for"number-label" id="number-label">(Number is found on card)
+          </label>
+          </fieldset>
+          <fieldset>
+            <legend>Mouse Type or Cat Type (required) </legend>
+            <label for="mouse account">Do you have a mouse account?<input id="mouse" type="radio" name="account-type" class="inline" value="mouse" checked /> Mouse </label>
+            <label for="cat account"><input id="cat account" type="radio" name="account-type" class="inline" value="cat" /> Cat</label>
+            </fieldset>
+            <fieldset>
+              <label for="referrer">How did you hear about us?<select id="dropdown" name="referrer">
+                <option value"">select one</option><option value="1">FreeCodeCamp</option><option value="2">FreeCodeCampBlog</option><option value="3">FreeCodeCampSocial</option>
+                </select>
+              </label>
+              <label for="issue">Please describe issue:<textarea id="issue" name="issue" rows="3" cols="30" placeholder="I saw a raccoon in my backyard."></textarea>
+              </label>
+            </fieldset>
+            <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="checkbox" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        <input class="inline" id="no-terms-and-conditions" type="checkbox" required name="no-terms-and-conditions" value="checkbox" /> No I do not accept the terms and conditions
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
